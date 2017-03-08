@@ -8,8 +8,7 @@ import { Provider } from "react-redux";
 import { Store } from "redux";
 import { ReduxState } from "./reducer";
 import createStore from "./store";
-import "./global.css";
-import "normalize.css/normalize.css";
+import "./index.less";
 import { setRendered } from "./modules/rendering";
 
 // this is defined with an up-to-state state if we come from a server side rendering context

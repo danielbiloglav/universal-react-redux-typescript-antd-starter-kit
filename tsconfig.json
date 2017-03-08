@@ -7,8 +7,9 @@
         "target": "es5",
         "jsx": "react",
         "noUnusedLocals": true,
-        "noImplicitAny": true,
-        "sourceMap": true
+        "noImplicitAny": false,
+        "sourceMap": true,
+        "allowSyntheticDefaultImports": true
     },
     "files": [
         "./src/index.tsx"

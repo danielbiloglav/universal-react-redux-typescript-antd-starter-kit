@@ -44,18 +44,22 @@ export default (env: string): Configuration => {
         },
         devtool,
         resolve: {
-            extensions: [".tsx", ".ts", ".js", ".css"]
+            extensions: [".tsx", ".ts", ".js", ".less"]
         },
         module: {
             rules: [
                 {
                     test: /\.tsx?$/,
-                    use: ["awesome-typescript-loader"],
+                    use: ["babel-loader", "awesome-typescript-loader"],
                     exclude: /node_modules/
                 },
                 {
-                    test: /\.css$/,
-                    use: ExtractTextPlugin.extract(["css-loader", "postcss-loader"]),
+                    test: /\.less$/,
+                    use: ExtractTextPlugin.extract(["css-loader", "less-loader", "postcss-loader"]),
+                },
+                {
+                    test: /.(png|jpg|jpeg|gif|svg|woff|woff2|eot|ttf)(\?v=\d+\.\d+\.\d+)?$/,
+                    loader: 'url-loader'
                 }
             ]
         },

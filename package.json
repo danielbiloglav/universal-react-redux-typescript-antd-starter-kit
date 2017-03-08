@@ -1,7 +1,7 @@
 {
   "name": "bohyran",
   "version": "0.0.1",
-  "description": "Sveriges bästa bostadsportal",
+  "description": "A minimal starter kit with React, Redux, TypeScript, server side rendering, hot reloading, Webpack 2 and Ant Design",
   "scripts": {
     "start": "npm run start:dev",
     "start:prod": "cross-env NODE_ENV=production node dist/server/src/server.js",
@@ -13,10 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lith-light-g/universal-react-redux-typescript-starter-kit.git"
+    "url": "https://github.com/danielbiloglav/universal-react-redux-typescript-antd-starter-kit.git"
   },
-  "author": "Daniel Biloglav",
-  "homepage": "https://www.bohyran.se",
+  "author": "François Nguyen (https://github.com/lith-light-g), Daniel Biloglav (https://github.com/danielbiloglav)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danielbiloglav/universal-react-redux-typescript-antd-starter-kit/issues"
+  },
+  "homepage": "https://github.com/danielbiloglav/universal-react-redux-typescript-antd-starter-kit#readme",
   "dependencies": {
     "antd": "^2.8.0",
     "autoprefixer": "^6.7.6",

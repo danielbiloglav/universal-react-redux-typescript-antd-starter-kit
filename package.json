@@ -1,5 +1,5 @@
 {
-  "name": "bohyran",
+  "name": "universal-react-redux-typescript-antd-starter-kit",
   "version": "0.0.1",
   "description": "A minimal starter kit with React, Redux, TypeScript, server side rendering, hot reloading, Webpack 2 and Ant Design",
   "scripts": {

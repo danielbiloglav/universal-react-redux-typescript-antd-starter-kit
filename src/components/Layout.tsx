@@ -9,7 +9,7 @@ class Layout extends React.Component<{}, {}> {
         return <div>
             <Helmet
                 htmlAttributes={{ lang: "en" }}
-                title="Sveriges bästa bostadsportal"
+                title="React, Redux, TypeScript, Ant Design Starter Kit"
                 link={[
                     { rel: "stylesheet", href: "styles.css" }
                 ]}

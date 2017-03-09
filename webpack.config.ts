@@ -55,7 +55,7 @@ export default (env: string): Configuration => {
                 },
                 {
                     test: /\.less$/,
-                    use: ExtractTextPlugin.extract(["css-loader", "less-loader", "postcss-loader"]),
+                    use: ExtractTextPlugin.extract(["css-loader", "postcss-loader", "less-loader"]),
                 },
                 {
                     test: /.(png|jpg|jpeg|gif|svg|woff|woff2|eot|ttf)(\?v=\d+\.\d+\.\d+)?$/,

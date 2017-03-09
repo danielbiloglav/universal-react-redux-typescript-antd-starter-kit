@@ -1,3 +1,4 @@
+/// <reference path="../typings.d.ts" />
 // tslint:disable-next-line:no-unused-variable
 import * as React from "react";
 import { ReduxState } from "../reducer";

@@ -4,12 +4,13 @@
             "es6",
             "dom"
         ],
-        "target": "es5",
+        "target": "es6",
         "jsx": "react",
         "noUnusedLocals": true,
         "noImplicitAny": false,
         "sourceMap": true,
-        "allowSyntheticDefaultImports": true
+        "allowSyntheticDefaultImports": true,
+        "moduleResolution": "node"
     },
     "files": [
         "./src/index.tsx"

@@ -4,6 +4,7 @@ import * as React from "react";
 import * as Helmet from "react-helmet";
 import { Layout as AntdLayout, Menu, Icon } from "antd";
 const { Header, Sider, Content } = AntdLayout;
+import "./Layout.less";
 
 interface IState {
     collapsed: boolean;

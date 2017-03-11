@@ -8,6 +8,6 @@
     ],
     "plugins": [
         "react-hot-loader/babel",
-        ["import", { "libraryName": "antd" }]
+        ["import", { "libraryName": "antd", "style": true }]
     ]
 }

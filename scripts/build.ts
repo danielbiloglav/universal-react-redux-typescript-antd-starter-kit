@@ -20,7 +20,7 @@ let program = ts.createProgram(["./src/server.tsx"], {
     lib: ["lib.es6.d.ts"],
     jsx: ts.JsxEmit.React,
     noEmitOnError: true,
-    noImplicitAny: false,
+    noImplicitAny: true,
     noUnusedLocals: true,
     sourceMap: true,
     outDir: "./dist/server",

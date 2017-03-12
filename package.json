@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/danielbiloglav/universal-react-redux-typescript-antd-starter-kit#readme",
   "dependencies": {
-    "antd": "^2.8.0",
+    "antd": "^2.8.1",
     "autoprefixer": "^6.7.6",
     "awesome-typescript-loader": "^3.0.8",
     "babel-core": "^6.23.1",

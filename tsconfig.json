@@ -4,7 +4,7 @@
             "es6",
             "dom"
         ],
-        "target": "es6",
+        "target": "es2015",
         "jsx": "react",
         "noUnusedLocals": true,
         "noImplicitAny": false,

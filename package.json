@@ -8,8 +8,9 @@
     "start:dev": "ts-node ./src/server.tsx",
     "debug": "ts-node --inspect=9229 ./src/server.tsx",
     "build:dev": "cross-env NODE_ENV=development ts-node scripts/build.ts",
-    "build:prod": "cross-env NODE_ENV=production ts-node scripts/build.ts",
-    "lint": "tslint -c tslint.json ./src/**/*.ts*"
+    "build:prod": "rimraf dist && cross-env NODE_ENV=production ts-node scripts/build.ts && npm run copy:less",
+    "lint": "tslint -c tslint.json ./src/**/*.ts*",
+    "copy:less": "copyfiles src/components/**/*.less dist/server"
   },
   "repository": {
     "type": "git",
@@ -66,8 +67,10 @@
     "@types/webpack": "^2.2.7",
     "@types/webpack-dev-middleware": "^1.9.1",
     "@types/webpack-hot-middleware": "^2.15.0",
+    "copyfiles": "^1.2.0",
     "cross-env": "^3.1.4",
     "react-hot-loader": "^3.0.0-beta.6",
+    "rimraf": "^2.6.1",
     "tslint": "^4.5.1",
     "typescript": "^2.2.1",
     "webpack-dev-middleware": "^1.10.1",

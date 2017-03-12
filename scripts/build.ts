@@ -20,12 +20,14 @@ let program = ts.createProgram(["./src/server.tsx"], {
     lib: ["lib.es6.d.ts"],
     jsx: ts.JsxEmit.React,
     noEmitOnError: true,
-    noImplicitAny: true,
+    noImplicitAny: false,
     noUnusedLocals: true,
     sourceMap: true,
     outDir: "./dist/server",
-    target: ts.ScriptTarget.ES5,
-    module: ts.ModuleKind.CommonJS
+    target: ts.ScriptTarget.ES2015,
+    module: ts.ModuleKind.CommonJS,
+    allowSyntheticDefaultImports: true,
+    moduleResolution: ts.ModuleResolutionKind.NodeJs
 });
 let emitResult = program.emit();
 let allDiagnostics = ts.getPreEmitDiagnostics(program).concat(emitResult.diagnostics);
